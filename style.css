@@ -1,0 +1,324 @@
+
+/* CSS file for Cafe Latte website */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5; /* Light cream */
+    color: #333333; /* Dark gray */
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #663300; /* Dark brown */
+    padding: 20px;
+    color: #FFFFFF; /* White */
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  /* Navigation styles */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100vw;
+    display: table;
+  
+  }
+  
+  nav li {
+    display: table-cell; 
+    position: relative; 
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+  
+  /* Main content styles */
+  main {
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+  }
+  
+  p {
+    margin: 0 0 10px 0;
+  }
+  .logo {
+    width: 90px; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+    margin-left: 45px;
+    margin-bottom: -2px;
+    padding: 0;
+  }
+  .hero {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+  }
+  .hero img {
+    width: 100%;
+    position: static;
+    background-position: center;
+    background-size: contain;
+    height: auto;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #8d5500;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #8B4513; /* Saddle brown */
+    padding: 20px;
+    color: #FFFFFF; /* White */
+    text-align: center;
+    bottom: 0;
+    margin-bottom: 0;
+  }
+  
+  /* Additional styles for contact us section */
+  .contact-us-section {
+    background-color: #D2B48C; /* Tan */
+    padding: 20px;
+  }
+  
+  .contact-form {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form input[type=text],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form button {
+    background-color: #8B4513; /* Saddle brown */
+    color: #FFFFFF; /* White */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #663300; /* Dark brown */
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  }
+  .featured-products {
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+  }
+
+  .product{
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .featured h2{
+    align-items: center;
+  }
+  article {
+    position: relative;
+    border-radius: 16px;
+    box-shadow: none;
+    background: #fff;
+    transform-origin: center;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+  }
+  
+  /* basic article elements styling */
+  article h2 {
+    margin: 0 0 18px 0;
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    color: black;
+    transition: color 0.3s ease-out;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  
+  article img {
+    max-width: 100%;
+    transform-origin: center;
+    transform: scale(1.001);
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .article-body {
+    padding: 24px;
+  }
+  
+  article a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #28666e;
+  }
+  
+
+  
+  /************************ 
+  Generic layout (demo looks)
+  **************************/
+
+  .articles {
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    margin-top: 50px;
+  }
+  
+  @media screen and (max-width: 960px) {
+    article {
+      container: card/inline-size;
+    }
+    .article-body p {
+      display: none;
+    }
+  }
+
+.about {
+
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about h1 {
+
+  font-size: 36px;
+  color: #8B4513;
+  margin-bottom: 20px;
+}
+
+.about p {
+  margin-bottom: 20px;
+}
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+  position: relative;
+}
+
+.form .group label {
+  font-size: 14px;
+  color: rgb(99, 102, 102);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  transition: all .3s ease;
+}
+
+.form .group input,
+.form .group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.form .group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form button {
+  background-color: #663300;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
